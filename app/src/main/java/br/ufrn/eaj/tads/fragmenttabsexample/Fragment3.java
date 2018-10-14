@@ -38,7 +38,7 @@ public class Fragment3 extends Fragment implements OnMapReadyCallback {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mMapView = (MapView) mView.findViewById(R.id.map);
+        mMapView = mView.findViewById(R.id.map);
 
         if(mMapView != null){
             mMapView.onCreate(null);

@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ViewPager vp = (ViewPager) findViewById(R.id.pager);
+        ViewPager vp = findViewById(R.id.pager);
         PagerAdapter pa = new FixedTabsPageAdapter(getSupportFragmentManager());
 
         vp.setAdapter(pa);
 
-        tabLayout = (TabLayout) findViewById(R.id.tab);
+        tabLayout = findViewById(R.id.tab);
         tabLayout.setupWithViewPager(vp);
 
         tabLayout.getTabAt(0).setIcon(android.R.drawable.presence_offline);

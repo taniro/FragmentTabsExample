@@ -23,11 +23,9 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR KEY VALUE" />
+            android:value="YOUR KEY HERE" />
     </application>
 
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
+    <uses-feature android:glEsVersion="0x00030001" android:required="true" />
 
 </manifest>

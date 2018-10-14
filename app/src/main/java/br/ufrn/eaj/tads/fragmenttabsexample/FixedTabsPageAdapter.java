@@ -10,6 +10,10 @@ import android.support.v4.view.PagerAdapter;
  */
 public class FixedTabsPageAdapter extends FragmentPagerAdapter {
 
+    Fragment f1 = new Fragment1();
+    Fragment f2 = new Fragment2();
+    Fragment f3 = new Fragment3();
+
 
     public FixedTabsPageAdapter(FragmentManager fm) {
         super(fm);
@@ -19,11 +23,11 @@ public class FixedTabsPageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new Fragment1();
+                return f1;
             case 1:
-                return new Fragment2();
+                return f2;
             case 2:
-                return new Fragment3();
+                return f3;
             default:
                 return null;
         }
